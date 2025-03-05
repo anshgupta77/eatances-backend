@@ -1,6 +1,6 @@
 
 function paginate(req, res, next) {
-    const { page = 1, limit = 5 } = req.query;
+    const { page = 1, limit = 6 } = req.query;
     console.log("pagination resource", req.paginationResource);
     const pageNum = parseInt(page);
     const limitNum = parseInt(limit);
